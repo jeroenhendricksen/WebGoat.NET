@@ -154,14 +154,6 @@
     <Content Include="App_Themes\Default\images\ChevronOverlay.png" />
     <Content Include="App_Themes\Default\images\eisk-logo.png" />
     <Content Include="Content\About.aspx" />
-    <Content Include="Content\BasicAuth.aspx" />
-    <Content Include="Content\Challenge1.aspx" />
-    <Content Include="Content\Challenge2.aspx" />
-    <Content Include="Content\Challenge3.aspx" />
-    <Content Include="Content\ChangePwd.aspx" />
-    <Content Include="Content\ClientSideStorage.aspx" />
-    <Content Include="Content\CommandInjection.aspx" />
-    <Content Include="Content\CSRFDemo.aspx" />
     <Content Include="Content\DomXSS.aspx" />
     <Content Include="Content\EmbeddedError.aspx" />
     <Content Include="Content\EncryptVSEncode.aspx" />
@@ -596,68 +588,12 @@
     <Compile Include="Content\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\BasicAuth.aspx.cs">
-      <DependentUpon>BasicAuth.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\BasicAuth.aspx.designer.cs">
-      <DependentUpon>BasicAuth.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\Challenge1.aspx.cs">
-      <DependentUpon>Challenge1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\Challenge1.aspx.designer.cs">
-      <DependentUpon>Challenge1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\Challenge2.aspx.cs">
-      <DependentUpon>Challenge2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\Challenge2.aspx.designer.cs">
-      <DependentUpon>Challenge2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\Challenge3.aspx.cs">
-      <DependentUpon>Challenge3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\Challenge3.aspx.designer.cs">
-      <DependentUpon>Challenge3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\ChangePwd.aspx.cs">
-      <DependentUpon>ChangePwd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\ChangePwd.aspx.designer.cs">
-      <DependentUpon>ChangePwd.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\ClientSideStorage.aspx.cs">
-      <DependentUpon>ClientSideStorage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\ClientSideStorage.aspx.designer.cs">
-      <DependentUpon>ClientSideStorage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\CommandInjection.aspx.cs">
-      <DependentUpon>CommandInjection.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\CommandInjection.aspx.designer.cs">
-      <DependentUpon>CommandInjection.aspx</DependentUpon>
-    </Compile>
     <Compile Include="dbtest.aspx.cs">
       <DependentUpon>RebuildDatabase.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="dbtest.aspx.designer.cs">
       <DependentUpon>RebuildDatabase.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\CSRFDemo.aspx.cs">
-      <DependentUpon>CSRFDemo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\CSRFDemo.aspx.designer.cs">
-      <DependentUpon>CSRFDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Content\DomXSS.aspx.cs">
       <DependentUpon>DomXSS.aspx</DependentUpon>
