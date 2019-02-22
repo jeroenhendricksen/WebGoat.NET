@@ -12,7 +12,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>OWASP.WebGoat.NET</RootNamespace>
     <AssemblyName>DotNetGoat</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
@@ -67,6 +67,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -116,9 +119,17 @@
   <ItemGroup>
     <Content Include="Content\EFSQLInjection.aspx" />
     <Content Include="Content\ForgotPassword.aspx" />
+    <Content Include="Content\JsonDeserialization.aspx" />
     <Content Include="Content\UploadPathManipulation.aspx" />
     <Content Include="Content\XMLExternalEntity.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Configuration\Default.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\webgoat_coins.sqlite">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="FolderProfile.pubxml" />
     <None Include="Resources\client-scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Resources\client-scripts\jquery-1.10.2.js" />
     <Content Include="Resources\client-scripts\jquery-1.10.2.min.js" />
@@ -537,6 +548,13 @@
     <Compile Include="Content\EFSQLInjection.aspx.designer.cs">
       <DependentUpon>EFSQLInjection.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Content\JsonDeserialization.aspx.cs">
+      <DependentUpon>JsonDeserialization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\JsonDeserialization.aspx.designer.cs">
+      <DependentUpon>JsonDeserialization.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Content\XMLExternalEntity.aspx.cs">
       <DependentUpon>XMLExternalEntity.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -935,7 +953,6 @@
     </VisualStudio>
   </ProjectExtensions>
   <ItemGroup>
-    <Folder Include="Configuration\" />
     <Folder Include="WebGoatCoins\uploads\" />
   </ItemGroup>
   <ItemGroup>
@@ -965,7 +982,9 @@
     <None Include="DB_Scripts\datafiles\products_old.txt" />
     <None Include="DB_Scripts\datafiles\securityquestions.txt" />
     <None Include="DB_Scripts\products\.DS_Store" />
-    <None Include="App_Data\XmlInjectionUsers.xml" />
+    <Content Include="App_Data\XmlInjectionUsers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="DB_Scripts\create_webgoatcoins_sqlite3.sql" />
   </ItemGroup>
   <ItemGroup />

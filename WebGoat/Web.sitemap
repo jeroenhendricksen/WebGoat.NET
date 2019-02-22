@@ -24,6 +24,8 @@
             <siteMapNode url="~/Content/EFSQLInjection.aspx" title="Exploiting SQL Injection with Entity Framework" description="SQL Injection" />
             <siteMapNode url="~/Content/PathManipulation.aspx" title="File Download Path Manipulation" description="Download File Path Manipulation" />
             <siteMapNode url="~/Content/UploadPathManipulation.aspx" title="File Upload Path Manipulation" description="Upload File Path Manipulation" />
+            <siteMapNode url="~/Content/JsonDeserialization.aspx" title="Json Deserialization" description="Json Deserialization" />
+            <siteMapNode url="~/Content/XMLExternalEntity.aspx" title="Xml External Entity" description="Xml External Entity" />
         </siteMapNode>
         <siteMapNode url="~/Content/XSS.aspx" title="Cross Site Scripting (XSS)" description="XSS">
             <siteMapNode url="~/Content/StoredXSS.aspx" title="Stored XSS" description="Stored XSS" />

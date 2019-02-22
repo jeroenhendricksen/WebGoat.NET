@@ -18,13 +18,13 @@ namespace OWASP.WebGoat.NET.Content
                 doc.LoadXml(txtBoxXmlInput.Text);
 
                 string output =
-$@"
-Xml:<br>
-{Server.HtmlEncode(doc.OuterXml)}<br>
-<br><br>
-Content:<br>
-{Server.HtmlEncode(doc.InnerText)}
-";
+                    $@"
+                    Xml:<br>
+                    <code>{Server.HtmlEncode(doc.OuterXml)}</code><br>
+                    <br><br>
+                    Content:<br>
+                     <code>{Server.HtmlEncode(doc.InnerText)}</code>
+                    ";
 
 
                 lblXmlOutput.Text = output;
