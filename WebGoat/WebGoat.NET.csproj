@@ -155,34 +155,13 @@
     <Content Include="App_Themes\Default\images\eisk-logo.png" />
     <Content Include="Content\About.aspx" />
     <Content Include="Content\DomXSS.aspx" />
-    <Content Include="Content\EmbeddedError.aspx" />
     <Content Include="Content\EncryptVSEncode.aspx" />
-    <Content Include="Content\Error.aspx" />
     <Content Include="Content\ExploitDebug.aspx" />
-    <Content Include="Content\FlashScripting.aspx" />
-    <Content Include="Content\ForcedBrowsing.aspx" />
-    <Content Include="Content\FormBasedAuth.aspx" />
     <Content Include="Content\Global.asax" />
-    <Content Include="Content\HiddenField.aspx" />
-    <Content Include="Content\InjectionExercise.aspx" />
-    <Content Include="Content\jQueryInjection.aspx" />
-    <Content Include="Content\XSSExercise.aspx" />
-    <Content Include="Content\WSDL.aspx" />
-    <Content Include="Content\WSAttacks.aspx" />
-    <Content Include="Content\JSONInjection.aspx" />
-    <Content Include="Content\LogInjection.aspx" />
-    <Content Include="Content\LogoutIssues.aspx" />
-    <Content Include="Content\Worm.aspx" />
-    <Content Include="Content\Viewstate.aspx" />
     <Content Include="Content\StoredXSS.aspx" />
     <Content Include="Content\SQLInjectionDiscovery.aspx" />
     <Content Include="Content\SQLInjection.aspx" />
-    <Content Include="Content\SessionExercise.aspx" />
-    <Content Include="Content\SessionFixation.aspx" />
-    <Content Include="Content\SamplePage.aspx" />
     <Content Include="Content\ReflectedXSS.aspx" />
-    <Content Include="Content\ParamTampering.aspx" />
-    <Content Include="Content\ResponseSplitting.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="App_Themes\Default\images\logo.png" />
     <Content Include="App_Themes\Default\images\logo2.png" />
@@ -190,7 +169,6 @@
     <Content Include="ForgotPassword.aspx" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="Content\PathManipulation.aspx" />
-    <Content Include="Content\PwdComplexity.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -602,26 +580,12 @@
     <Compile Include="Content\DomXSS.aspx.designer.cs">
       <DependentUpon>DomXSS.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\EmbeddedError.aspx.cs">
-      <DependentUpon>EmbeddedError.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\EmbeddedError.aspx.designer.cs">
-      <DependentUpon>EmbeddedError.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Content\EncryptVSEncode.aspx.cs">
       <DependentUpon>EncryptVSEncode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Content\EncryptVSEncode.aspx.designer.cs">
       <DependentUpon>EncryptVSEncode.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\Error.aspx.cs">
-      <DependentUpon>Error.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\Error.aspx.designer.cs">
-      <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
     <Compile Include="Content\ExploitDebug.aspx.cs">
       <DependentUpon>ExploitDebug.aspx</DependentUpon>
@@ -630,106 +594,8 @@
     <Compile Include="Content\ExploitDebug.aspx.designer.cs">
       <DependentUpon>ExploitDebug.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\FlashScripting.aspx.cs">
-      <DependentUpon>FlashScripting.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\FlashScripting.aspx.designer.cs">
-      <DependentUpon>FlashScripting.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\ForcedBrowsing.aspx.cs">
-      <DependentUpon>ForcedBrowsing.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\ForcedBrowsing.aspx.designer.cs">
-      <DependentUpon>ForcedBrowsing.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\FormBasedAuth.aspx.cs">
-      <DependentUpon>FormBasedAuth.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\FormBasedAuth.aspx.designer.cs">
-      <DependentUpon>FormBasedAuth.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Content\Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Content\HiddenField.aspx.cs">
-      <DependentUpon>HiddenField.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\HiddenField.aspx.designer.cs">
-      <DependentUpon>HiddenField.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\InjectionExercise.aspx.cs">
-      <DependentUpon>InjectionExercise.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\InjectionExercise.aspx.designer.cs">
-      <DependentUpon>InjectionExercise.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\jQueryInjection.aspx.cs">
-      <DependentUpon>jQueryInjection.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\jQueryInjection.aspx.designer.cs">
-      <DependentUpon>jQueryInjection.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\XSSExercise.aspx.cs">
-      <DependentUpon>XSSExercise.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\XSSExercise.aspx.designer.cs">
-      <DependentUpon>XSSExercise.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\WSDL.aspx.cs">
-      <DependentUpon>WSDL.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\WSDL.aspx.designer.cs">
-      <DependentUpon>WSDL.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\WSAttacks.aspx.cs">
-      <DependentUpon>WSAttacks.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\WSAttacks.aspx.designer.cs">
-      <DependentUpon>WSAttacks.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\JSONInjection.aspx.cs">
-      <DependentUpon>JSONInjection.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\JSONInjection.aspx.designer.cs">
-      <DependentUpon>JSONInjection.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\LogInjection.aspx.cs">
-      <DependentUpon>LogInjection.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\LogInjection.aspx.designer.cs">
-      <DependentUpon>LogInjection.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\LogoutIssues.aspx.cs">
-      <DependentUpon>LogoutIssues.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\LogoutIssues.aspx.designer.cs">
-      <DependentUpon>LogoutIssues.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\Worm.aspx.cs">
-      <DependentUpon>Worm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\Worm.aspx.designer.cs">
-      <DependentUpon>Worm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\Viewstate.aspx.cs">
-      <DependentUpon>Viewstate.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\Viewstate.aspx.designer.cs">
-      <DependentUpon>Viewstate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Content\StoredXSS.aspx.cs">
       <DependentUpon>StoredXSS.aspx</DependentUpon>
@@ -752,47 +618,12 @@
     <Compile Include="Content\SQLInjection.aspx.designer.cs">
       <DependentUpon>SQLInjection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\SessionExercise.aspx.cs">
-      <DependentUpon>SessionExercise.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\SessionExercise.aspx.designer.cs">
-      <DependentUpon>SessionExercise.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\SessionFixation.aspx.cs">
-      <DependentUpon>SessionFixation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\SessionFixation.aspx.designer.cs">
-      <DependentUpon>SessionFixation.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\SamplePage.aspx.cs">
-      <DependentUpon>SamplePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\SamplePage.aspx.designer.cs">
-      <DependentUpon>SamplePage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Content\ReflectedXSS.aspx.cs">
       <DependentUpon>ReflectedXSS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Content\ReflectedXSS.aspx.designer.cs">
       <DependentUpon>ReflectedXSS.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\ParamTampering.aspx.cs">
-      <DependentUpon>ParamTampering.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\ParamTampering.aspx.designer.cs">
-      <DependentUpon>ParamTampering.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\ResponseSplitting.aspx.cs">
-      <DependentUpon>ResponseSplitting.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\ResponseSplitting.aspx.designer.cs">
-      <DependentUpon>ResponseSplitting.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -828,10 +659,6 @@
     </Compile>
     <Compile Include="Content\PathManipulation.aspx.designer.cs">
       <DependentUpon>PathManipulation.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\PwdComplexity.aspx.cs">
-      <DependentUpon>PwdComplexity.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddNewUser.aspx.cs">
       <DependentUpon>AddNewUser.aspx</DependentUpon>
