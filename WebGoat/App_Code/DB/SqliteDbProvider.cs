@@ -19,10 +19,12 @@ namespace OWASP.WebGoat.NET.App_Code.DB
 
         public SqliteDbProvider(ConfigFile configFile)
         {
-            _connectionString = string.Format("Data Source={0};Version=3", configFile.Get(DbConstants.KEY_FILE_NAME));
+            var dbFullFilePath = Path.Combine(Settings.RootDir, configFile.Get(DbConstants.KEY_FILE_NAME)); ;
+
+            _connectionString = string.Format("Data Source={0};Version=3", dbFullFilePath);
 
             _clientExec = configFile.Get(DbConstants.KEY_CLIENT_EXEC);
-            _dbFileName = configFile.Get(DbConstants.KEY_FILE_NAME);
+            _dbFileName = dbFullFilePath;
 
             if (!File.Exists(_dbFileName))
                 SqliteConnection.CreateFile(_dbFileName);

@@ -197,3 +197,5 @@ WebGoat/Configuration/*.config
 # Trash Files #
 ###############
 .DS_Store
+/.vs
+/WebGoat/*.user

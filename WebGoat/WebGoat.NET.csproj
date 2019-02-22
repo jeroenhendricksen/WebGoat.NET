@@ -18,13 +18,15 @@
     <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>46e2aded</NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -122,6 +124,9 @@
     <Content Include="Resources\client-scripts\jquery-migrate-1.2.1.js" />
     <Content Include="Resources\css\bootstrap.css" />
     <Content Include="Resources\tabs.css" />
+    <Content Include="sqlite3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.sitemap">
       <SubType>Designer</SubType>
     </Content>
@@ -1148,7 +1153,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>3273</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/WebGoat.NET</IISUrl>
+          <IISUrl>http://localhost:3273/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
