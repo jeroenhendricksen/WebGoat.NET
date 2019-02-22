@@ -12,7 +12,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>OWASP.WebGoat.NET</RootNamespace>
     <AssemblyName>DotNetGoat</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
@@ -117,6 +117,7 @@
     <Content Include="Content\EFSQLInjection.aspx" />
     <Content Include="Content\ForgotPassword.aspx" />
     <Content Include="Content\UploadPathManipulation.aspx" />
+    <Content Include="Content\XMLExternalEntity.aspx" />
     <Content Include="Global.asax" />
     <None Include="Resources\client-scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Resources\client-scripts\jquery-1.10.2.js" />
@@ -535,6 +536,13 @@
     </Compile>
     <Compile Include="Content\EFSQLInjection.aspx.designer.cs">
       <DependentUpon>EFSQLInjection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\XMLExternalEntity.aspx.cs">
+      <DependentUpon>XMLExternalEntity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\XMLExternalEntity.aspx.designer.cs">
+      <DependentUpon>XMLExternalEntity.aspx</DependentUpon>
     </Compile>
     <Compile Include="Entities\Categories.cs" />
     <Compile Include="Entities\CoinsDB.cs" />
