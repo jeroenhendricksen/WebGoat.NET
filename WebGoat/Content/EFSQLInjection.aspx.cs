@@ -20,8 +20,7 @@ namespace OWASP.WebGoat.NET.Content
                 var code = txtOfficeCode.Text;
                 var output = db.Database
                     .SqlQuery<string>("SELECT email FROM Employees " +
-                                      "WHERE officeCode = {0}",
-                                      code)
+                                      "WHERE officeCode = " + code)
                     .ToArray();
 
                 lblOutput.Text = output.Length == 0
