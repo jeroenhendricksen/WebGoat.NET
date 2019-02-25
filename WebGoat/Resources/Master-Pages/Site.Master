@@ -98,7 +98,7 @@
                                     <ItemTemplate>
                                     <li>
 
-                            <% if (Session["DBConfigured"] != null)
+                            <% if (true)
                                { %>
 
                                     <%-- to disable particular items, simply remove their description from the Web.sitemap --%>
