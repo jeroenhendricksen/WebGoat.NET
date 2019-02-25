@@ -20,8 +20,7 @@ namespace OWASP.WebGoat.NET
             //do a quick test.  If the database connects, inform the user the database seems to be working.
             if (du.TestConnection())
             {
-                lblOutput.Text = string.Format("You appear to be connected to a valid {0} provider. " +
-                                               "If you want to reconfigure or rebuild the database, click on the button below!", du.Name);
+                lblOutput.Text = string.Format("You appear to be connected to a valid {0} provider. ", du.Name);
                 Session["DBConfigured"] = true;
 
                 //Info leak

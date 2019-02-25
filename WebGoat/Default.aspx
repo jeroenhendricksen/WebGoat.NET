@@ -20,8 +20,8 @@ designed to be used in live training and/or e-learning environments.
     <asp:Label ID="lblOutput" runat="server"></asp:Label>
     <br />
     <br />
-    <asp:Button ID="ButtonProceed" SkinID="Button" runat="server" 
-        Text="Set Up Database!" onclick="ButtonProceed_Click"/>
+    <%-- <asp:Button ID="ButtonProceed" SkinID="Button" runat="server"  --%>
+    <%--     Text="Set Up Database!" onclick="ButtonProceed_Click"/> --%>
 
 </asp:Content>
 

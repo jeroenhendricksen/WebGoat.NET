@@ -3,8 +3,8 @@
     <siteMapNode url="~/Content/mainpage.aspx" title="OWASP.WebGoat.NET" description="Root">
         <siteMapNode url="~/Content/GettingStarted.aspx" title="Getting Started with WebGoat.NET" description="Getting Started">
             <siteMapNode url="~/Default.aspx" title="Welcome" description="Welcome Page" />
-            <siteMapNode url="~/ProxySetup.aspx" title="Web Proxy Test" description="Test Proxy" />
-            <siteMapNode url="~/RebuildDatabase.aspx" title="Testing Database" description="Rebuild Database" />
+            <!-- <siteMapNode url="~/ProxySetup.aspx" title="Web Proxy Test" description="Test Proxy" /> -->
+            <!-- <siteMapNode url="~/RebuildDatabase.aspx" title="Testing Database" description="Rebuild Database" /> -->
         </siteMapNode>
         <siteMapNode url="~/WebGoatCoins/Welcome.aspx" title="WebGoat Coins Customer Portal" description="Coins Customer Portal">
             <siteMapNode url="~/WebGoatCoins/CustomerLogin.aspx" title="Customer Login" description="Customer Login" />
