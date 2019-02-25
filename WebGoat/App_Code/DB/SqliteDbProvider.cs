@@ -113,8 +113,17 @@ namespace OWASP.WebGoat.NET.App_Code.DB
                     "SELECT is_admin FROM CustomerLogin where email = @email", 
                     connection);
                 command.Parameters.AddWithValue("@email", email);
-                var result = (long?)command.ExecuteScalar();
-                return result.HasValue && result.Value == 1;
+                object result = command.ExecuteScalar();
+
+                bool IsAdmin = false;
+
+                long? longResult = result as long?;
+                if (longResult != null)
+                {
+                    IsAdmin = longResult.Value == 1;
+                }
+
+                return IsAdmin;
             }
         }
 
