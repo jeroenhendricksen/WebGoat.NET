@@ -555,6 +555,7 @@
     <Compile Include="Content\JsonDeserialization.aspx.designer.cs">
       <DependentUpon>JsonDeserialization.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Content\User.cs" />
     <Compile Include="Content\XMLExternalEntity.aspx.cs">
       <DependentUpon>XMLExternalEntity.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

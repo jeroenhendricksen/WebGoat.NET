@@ -1,19 +1,13 @@
 using System;
 using System.Collections.Generic;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Xml;
-using System.Xml.XPath;
-using System.Data;
-using System.IO;
 using System.Text;
 
 namespace OWASP.WebGoat.NET
 {
     public partial class XMLInjection : System.Web.UI.Page
     {
-        List<XmlUser> users;
+        List<User> users;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -40,21 +34,21 @@ namespace OWASP.WebGoat.NET
             //Need to add lesson!
             if (Request.QueryString["name"] != null && Request.QueryString["email"] != null)
             {
-                users.Add(new XmlUser(Request.QueryString["name"], Request.QueryString["email"]));
+                users.Add(new User(Request.QueryString["name"], Request.QueryString["email"]));
                 WriteXML();
             }
         }
 
         private void ReadXml()
         {
-            users = new List<XmlUser>();
+            users = new List<User>();
             XmlDocument doc = new XmlDocument();
             doc.Load(Server.MapPath("/App_Data/XmlInjectionUsers.xml"));
             foreach (XmlNode node in doc.ChildNodes[1].ChildNodes)
             {
                 if (node.Name == "user")
                 {
-                    users.Add(new XmlUser(node.ChildNodes[0].InnerText, node.ChildNodes[1].InnerText));
+                    users.Add(new User(node.ChildNodes[0].InnerText, node.ChildNodes[1].InnerText));
                 }
             }
         }
@@ -62,7 +56,7 @@ namespace OWASP.WebGoat.NET
         private void WriteXML()
         {
             string xml = "<?xml version=\"1.0\" standalone=\"yes\"?>"+ Environment.NewLine +"<users>" + Environment.NewLine;
-            foreach (XmlUser user in users)
+            foreach (User user in users)
             {
                 xml += "<user>" + Environment.NewLine;
                 xml += "<name>" + user.Name + "</name>" + Environment.NewLine;
@@ -74,18 +68,6 @@ namespace OWASP.WebGoat.NET
             XmlTextWriter writer = new XmlTextWriter(Server.MapPath("/App_Data/XmlInjectionUsers.xml"), Encoding.UTF8);
             writer.WriteRaw(xml);
             writer.Close();
-        }
-    }
-
-    public class XmlUser
-    {
-        public string Name  { get; set; }
-        public string Email { get; set; }
-
-        public XmlUser(string name, string email)
-        {
-            Name = name;
-            Email = email;
         }
     }
 }
