@@ -18,7 +18,7 @@
     <p>Try extracting some files from the server ;)</p>
  
     <p><asp:TextBox ID="txtBoxXmlInput" runat="server" TextMode="MultiLine" Width="400px" Height="100px" 
-                    Text="&lt;/users&gt;
+                    Text="&lt;users&gt;
   &lt;user&gt;
     &lt;name&gt;Patrick van Ek&lt;/name&gt;
     &lt;email&gt;Patrick@webgoat.com&lt;/email&gt;
