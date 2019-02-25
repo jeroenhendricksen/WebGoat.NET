@@ -15,12 +15,6 @@ namespace OWASP.WebGoat.NET.resources.Master_Pages
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["showSplash"] == null)
-            {
-                Session["showSplash"] = false;
-                Response.Redirect("~/Default.aspx");
-            }
-
             if (Page.User.Identity.IsAuthenticated && Settings.CurrentDbProvider != null)
             {
                 IsAdmin = Settings.CurrentDbProvider.IsAdminCustomerLogin(Page.User.Identity.Name);
