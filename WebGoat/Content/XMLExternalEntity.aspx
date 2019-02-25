@@ -18,7 +18,16 @@
     <p>Try extracting some files from the server ;)</p>
  
     <p><asp:TextBox ID="txtBoxXmlInput" runat="server" TextMode="MultiLine" Width="400px" Height="100px" 
-                    Text="<!DOCTYPE doc [<!ENTITY win SYSTEM 'file:///C:/windows/system32/drivers/etc/hosts'>]> <doc>&win;</doc>"/></p>
+                    Text="&lt;/users&gt;
+  &lt;user&gt;
+    &lt;name&gt;Patrick van Ek&lt;/name&gt;
+    &lt;email&gt;Patrick@webgoat.com&lt;/email&gt;
+  &lt;/user&gt;
+  &lt;user&gt;
+    &lt;name&gt;Rdw gebruiker&lt;/name&gt;
+    &lt;email&gt;rdw@webgoat.com&lt;/email&gt;
+  &lt;/user&gt;
+&lt;/users&gt;"/></p>
     
     <p><asp:Button ID="btnXmlInput" runat="server" onclick="btnXmlInput_Click" 
                    Text="Send XML" SkinID="Button"/></p>
