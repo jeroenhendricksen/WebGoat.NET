@@ -22,7 +22,7 @@ namespace OWASP.WebGoat.NET
 
         public override string ToString()
         {
-            return $"Type:{GetType().FullName}, {nameof(Name)}: {Name}, {nameof(Email)}: {Email}";
+            return $"Type: {GetType().FullName}, {nameof(Name)}: {Name}, {nameof(Email)}: {Email}";
         }
     }
 }
